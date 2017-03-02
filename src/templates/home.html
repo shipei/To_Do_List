@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+   <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        {% include 'carousel.html' %}
+    </div><!-- /.carousel -->
+
+   <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        {% include 'featurette_heading.html' %}
+      </div>
+
+      <!-- /END THE FEATURETTES -->
+{% endblock %}
